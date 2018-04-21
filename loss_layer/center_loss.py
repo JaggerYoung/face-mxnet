@@ -52,7 +52,7 @@ class CenterlossOutput(mx.operator.CustomOp):
 @mx.operator.register('CenterlossOutput')
 class CenterlossOutputProp(mx.operator.CustomOpProp):
     def __init__(self, alpha, scale, class_index):
-        super(CenterlossutputProp, self).__init__(need_top_grad=False)
+        super(CenterlossOutputProp, self).__init__(need_top_grad=False)
         self.alpha = alpha
         self.scale = scale
         self.class_index = class_index
